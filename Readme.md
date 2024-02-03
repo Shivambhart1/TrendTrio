@@ -21,4 +21,7 @@ git clone https://github.com/Shivambhart1/TrendTrio.git
 cd TrendTrio
 ```
 
-You can also visit the website through
+## Visiting Website
+
+The website is hosted through Netlify
+You can visit the website by this link : https://unique-bienenstitch-69b9c2.netlify.app/
