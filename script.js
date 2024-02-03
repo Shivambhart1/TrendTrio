@@ -16,9 +16,18 @@ function displayProducts(data) {
       var productDiv = document.createElement("div");
       productDiv.classList.add("men-card");
 
+      var badge_text = document.createElement("h6");
+      badge_text.classList.add("badge-text");
+      badge_text.textContent = product.badge_text;
+
       var imageElement = document.createElement("img");
       imageElement.src = product.image;
       imageElement.alt = product.title;
+
+      var imageDiv = document.createElement("div");
+      imageDiv.classList.add("image-div");
+      imageDiv.appendChild(badge_text);
+      imageDiv.appendChild(imageElement);
 
       var headingElement = document.createElement("h3");
       headingElement.textContent = product.title;
@@ -63,7 +72,7 @@ function displayProducts(data) {
       var cardButton = document.createElement("button");
       cardButton.textContent = "Add to Cart";
 
-      productDiv.appendChild(imageElement);
+      productDiv.appendChild(imageDiv);
       productDiv.appendChild(titleAndVendorDiv);
       productDiv.appendChild(pricingDiv);
       productDiv.appendChild(cardButton);

@@ -58,6 +58,22 @@ h1 {
   gap: 24px;
 }
 
+.image-div {
+  display: flex;
+}
+
+.badge-text {
+  padding: 10px;
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 2px;
+  color: black;
+}
+
 .men-card {
   width: 300px;
   cursor: pointer;
