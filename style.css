@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  display: flex;
+  font-size: 50px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.section-tab {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  background: #f2f2f2;
+  height: 65px;
+  width: 80%;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.section-tab a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.333%;
+  height: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.section-tab a.selected {
+  background-color: black;
+  color: white;
+}
+
+.section-tab a.selected {
+  background-color: black;
+  color: white;
+}
+
+#product-container {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.men-card {
+  width: 300px;
+  cursor: pointer;
+}
+
+.men-card h3 {
+  font-size: 26px;
+}
+
+.TitleAndVendor {
+  width: 80%;
+  display: flex;
+  height: 40px;
+  max-height: 100px;
+  align-items: center;
+}
+
+.men-card img {
+  border-radius: 6px;
+  width: 100%;
+  height: 400px;
+}
+
+.dot-span {
+  align-items: center;
+}
+
+.men-card button {
+  width: 100%;
+  padding: 16px 16px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.price-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price-div .discount-price {
+  color: red;
+}
+
+.price-div .compare-at-price {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.men-card button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.men-card h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+}
+
+@media screen and (max-width: 573px) {
+  h1 {
+    font-size: 40px;
+    word-break: break-all;
+  }
+}
